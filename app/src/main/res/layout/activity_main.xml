@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="First Name:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter First Name"
+            android:layout_weight="1"
+            android:id="@+id/et_activity_main_first_name"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Last Name:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter Last Name"
+            android:layout_weight="1"
+            android:id="@+id/et_activity_main_last_name"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="D. O. B.:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter DOB"
+            android:layout_weight="1"
+            android:inputType="date"
+            android:id="@+id/et_activity_main_dob"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Age:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter Age"
+            android:layout_weight="1"
+            android:id="@+id/et_activity_main_age"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Gender:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Male"
+                android:id="@+id/male"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Female"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Married:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <RadioGroup
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/radioGroupMarraige"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Married"
+                android:id="@+id/married"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/unmarried"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Unmarried"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Address:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter Address"
+            android:layout_weight="1"
+            android:inputType="textPostalAddress"
+            android:id="@+id/et_activity_main_address"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="State:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter State"
+            android:layout_weight="1"
+            android:id="@+id/et_activity_main_state"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Pincode:"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter Pincode"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_activity_main_pincode"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_media_play"
+        app:fabSize="mini"
+        android:layout_margin="4dp"
+        android:onClick="onButtonClicked"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
